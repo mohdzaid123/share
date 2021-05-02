@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+
+import Popup from "./components/Popup";
 
 function App() {
+  const [buttonPopup, setButtonPopups] = useState(false);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+      <main>
+        <h1>React Popups</h1>
+        <br />
+        <br />
+        <button
+          className="btn btn-primary"
+          onClick={() => setButtonPopups(true)}
         >
-          Learn React
-        </a>
-      </header>
+          Open Popups
+        </button>
+      </main>
+
+      <Popup trigger={buttonPopup} setTrigger={setButtonPopups}></Popup>
     </div>
   );
 }
