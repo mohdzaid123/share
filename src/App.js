@@ -13,6 +13,7 @@ function App() {
         <h1>React Popups</h1>
         <br />
         <br />
+
         <button
           className="btn btn-primary"
           onClick={() => setButtonPopups(true)}
