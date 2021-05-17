@@ -1,10 +1,13 @@
-.fb img {
-  width: 32px;
-  height: 32px;
-}
-
 .dis {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
+}
+
+.con {
+  background-color: antiquewhite;
+ 
+}
+.on {
+  cursor: pointer !important;
 }

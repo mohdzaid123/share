@@ -1,0 +1,14 @@
+code {
+  -webkit-user-select: all;
+  user-select: all;
+  display: block;
+  padding: 20px;
+  background-color: black;
+  text-align: left;
+  font-family: inherit;
+  overflow: auto;
+}
+
+.poi {
+  cursor: context-menu !important;
+}
