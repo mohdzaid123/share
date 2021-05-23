@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 
-import Popup from "./components/Popup";
-import Embedded from "./components/Embeddded";
+
 import Modal from "./components/Modals/Modal";
+import Embed from "./components/Modals/Embed";
 
 function App() {
   const [show, setShow] = useState(false);
+  const [embedded, setEmbedded] = useState(false);
 
   const closeModalHandler = () => setShow(false);
+  const closeEmbedded = () => setEmbedded(false);
+
   return (
     <div>
       {show ? (
@@ -21,38 +24,24 @@ function App() {
       >
         Open Modal
       </button>
+
+      <button
+        onClick={() => {
+          setEmbedded(true);
+        }}
+        className="btn-openModal"
+      >
+        Open Modal
+      </button>
       <Modal show={show} closeModalHandler={closeModalHandler} />
+
+      <Embed embed={embedded} close={closeEmbedded} />
     </div>
   );
 }
 
-//   // const [buttonPopup, setButtonPopups] = useState(false);
-//   // const [embedded, setEmbedded] = useState(false);
-
-//   // return (
-//   //   <div>
-//   //     <main className="image1">
-//   //       <h1>React Popups</h1>
-//   //       <br />
-//   //       <br />
-
-//   //       <button
-//   //         className="btn btn-primary"
-//   //         onClick={() => setButtonPopups(true)}
-//   //       >
-//   //         Open Popups
-//   //       </button>
-//   //       <button
-//   //         className="btn btn-primary mt-3"
-//   //         onClick={() => setEmbedded(true)}
-//   //       >
-//   //         Embedde video
-//   //       </button>
-//   //     </main>
-//   //     <Popup trigger={buttonPopup} setTrigger={setButtonPopups} />
-//   //     <Embedded embedded={embedded} setEmbedded={setEmbedded} />
-
-//     </div>
-//   );
-// }
 export default App;
+
+// {embedded ? (
+//   <div onClick={closeEmbedded} className="back-drop"></div>
+// ) : null}

@@ -1,0 +1,53 @@
+code {
+  -webkit-user-select: all;
+  user-select: all;
+  display: flex;
+  padding: 20px;
+  background-color: black;
+  text-align: left;
+  font-family: inherit;
+  overflow: auto;
+}
+
+.fon {
+  font-size: 2px !important;
+  color: black !important;
+  border: none !important;
+}
+
+button {
+  color: black !important;
+  border: none !important;
+  background-color: #fff !important;
+}
+
+.tex {
+  margin-top: 0.2rem !important;
+}
+
+input[type="checkbox"] {
+  width: 20px !important; /*Desired width*/
+  height: 20px !important; /*Desired height*/
+}
+
+textarea {
+  -webkit-user-select: all !important;
+  user-select: all !important;
+  display: flex;
+  padding: 20px !important;
+  background-color: white !important;
+  color: black !important;
+  text-align: left !important;
+  font-family: inherit !important;
+  overflow: auto !important;
+}
+
+.red {
+  position: fixed !important;
+}
+
+.dis {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}

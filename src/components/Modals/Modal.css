@@ -10,7 +10,7 @@ body {
 
 .modal-wrapper {
   background-color: #fff !important;
-  width: 40% !important;
+  width: 45% !important;
   max-width: 800px !important;
   margin: 4rem auto !important;
   transition: all 1.3s ease !important;
@@ -85,3 +85,29 @@ body {
   transition: all 0.5s !important;
   width: 100% !important;
 }
+
+.urls {
+  display: flex !important;
+  border: 1px solid grey;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 0.5rem !important;
+  background-color: #eee !important;
+  margin: 0.7rem !important;
+  
+}
+
+.clips {
+  text-decoration: none !important;
+  color: blue !important;
+}
+pre {
+  background-color: #eee !important;
+  color: black !important;
+  font-size: 1rem !important;
+}
+
+.poi {
+  cursor: default !important;
+}
+
