@@ -1,16 +1,5 @@
-code {
-  -webkit-user-select: all;
-  user-select: all;
-  display: flex;
-  padding: 20px;
-  background-color: black;
-  text-align: left;
-  font-family: inherit;
-  overflow: auto;
-}
-
 .fon {
-  font-size: 2px !important;
+  font-size: 1px !important;
   color: black !important;
   border: none !important;
 }
@@ -42,12 +31,11 @@ textarea {
   overflow: auto !important;
 }
 
-.red {
-  position: fixed !important;
+.dis {
+  padding-left: 450px !important;
+  padding-top: 50px !important;
 }
 
-.dis {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
+.pok {
+  margin-bottom: 16px !important;
 }

@@ -6,7 +6,7 @@ import "./Embed.css";
 
 const Embed = ({ embed, close }) => {
   return embed ? (
-    <Modal show={true} className="dis">
+    <Modal show={true} className="d-xx-flex  dis">
       <Modal.Header className="">
         <p className="poi ">Embedded Video</p>
         <Button className="float-right btn-light" onClick={() => close(false)}>
@@ -25,24 +25,27 @@ const Embed = ({ embed, close }) => {
           picture-in-picture" allowfullscreen&gt;&lt;&#47;iframe&gt;
         </textarea>
         <div className="text-cen">
-          <ul className="tex pt-3">EMBED OPTIONS</ul>
+          <ul className="tex pt-3 ">EMBED OPTIONS</ul>
 
           <input
             type="checkbox"
             id="vehicle1"
             name="vehicle1"
-            className="mt-4"
+            className="mt-3"
           />
 
-          <label for="vehicle1">Show player controls. </label>
+          <label for="vehicle1" className="ml-3">
+            Show player controls.{" "}
+          </label>
           <br />
           <input
             type="checkbox"
             id="vehicle1"
             name="vehicle1"
-            className="mt-4"
+            className="mt-3"
           />
-          <label className="position" for="vehicle1">
+
+          <label className="position" for="vehicle1" className="ml-3 pok">
             Enable privacy-enhanced mode .{" "}
           </label>
         </div>
@@ -53,11 +56,12 @@ const Embed = ({ embed, close }) => {
           data-clipboard-target="#set"
           style={{
             color: "black",
-            "margin-right": "2px !important",
+            margin: "20px",
             "text-decoration": "none",
           }}
+          className="d-flex align-items-center justify-content-center bg-light"
         >
-          Copy
+          Copy To Clipboard
         </Clipboard>
       </Modal.Body>
     </Modal>
