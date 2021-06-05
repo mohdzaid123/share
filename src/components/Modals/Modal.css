@@ -1,7 +1,6 @@
 * {
   margin: 0 !important;
   padding: 0 !important;
-  box-sizing: border-box !important;
 }
 
 body {
@@ -10,7 +9,7 @@ body {
 
 .modal-wrapper {
   background-color: #fff !important;
-  width: 45% !important;
+  width: 40% !important;
   max-width: 800px !important;
   margin: 4rem auto !important;
   transition: all 1.3s ease !important;
@@ -18,6 +17,9 @@ body {
 }
 
 .modal-header {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+  margin-left: 12px !important;
   background: #fff !important;
   color: black !important;
   padding: 0.1rem !important;
@@ -38,6 +40,10 @@ body {
 }
 
 .modal-body {
+  display: flex;
+  align-items: center !important;
+  justify-content: space-between !important;
+
   margin-bottom: 5rem !important;
 }
 
@@ -51,7 +57,7 @@ body {
   background: #eee !important;
   color: #333 !important;
   padding: 1rem !important;
-  margin: 1rem 0 2rem 0 !important;
+  margin: 1rem 0.9rem 2rem 0.9rem !important;
   border: none !important;
 }
 
@@ -88,7 +94,7 @@ body {
 
 .urls {
   display: flex !important;
-  border: 1px solid grey;
+  border: 1px solid white;
   justify-content: space-between !important;
   align-items: center !important;
   padding: 0.5rem !important;
@@ -110,3 +116,19 @@ pre {
   cursor: default !important;
 }
 
+.close-modal-btn {
+  color: grey;
+  margin-right: 9px !important;
+}
+
+#content {
+  font-size: 12px !important;
+  letter-spacing: 0px !important;
+}
+
+.on {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+}

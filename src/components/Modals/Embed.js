@@ -6,7 +6,7 @@ import "./Embed.css";
 const Embed = ({ embed, close }) => {
   return embed ? (
     <div
-      style={{ top: "1px", left: "2px", position: "fixed" }}
+      style={{ top: "1px", left: "1px", position: "fixed" }}
       class="mainContainer"
     >
       <div class="containerFlex">

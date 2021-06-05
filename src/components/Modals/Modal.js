@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-import { Button, Modal } from "react-bootstrap";
 import Clipboard from "react-clipboard.js";
 
 import {
@@ -18,7 +17,7 @@ const Modals = ({ show, closeModalHandler }) => {
   const [url, setUrls] = useState(
     "https://www.youtube.com/watch?v=-t7PgfHHHOw"
   );
-  let size = 70;
+  let size = 60;
   return (
     <div
       className="modal-wrapper"
@@ -34,28 +33,30 @@ const Modals = ({ show, closeModalHandler }) => {
             x
           </span>
         </div>
-        <div className="modal-body ml-2">
+        <div className="modal-body">
           <a href="https://www.facebook.com">
-            <FacebookIcon size={size} round={true} className="on ml-2 mr-2" />
+            <FacebookIcon size={size} round={true} className="on" />
+            facebook
           </a>
           <a href="https://www.whatsapp.com">
-            <WhatsappIcon size={size} round={true} className="on ml-2 mr-2" />
+            <WhatsappIcon size={size} round={true} className="on" />
+            whatsapp
           </a>
           <a href="https://www.facebook.com">
-            <FacebookMessengerIcon
-              size={size}
-              round={true}
-              className="on ml-2 mr-2"
-            />
+            <FacebookMessengerIcon size={size} round={true} className="on" />
+            messenger
           </a>
           <a href="https://www.twitter.com">
-            <TwitterIcon size={size} round={true} className="on ml-2 mr-2" />
+            <TwitterIcon size={size} round={true} className="on" />
+            Twitter
           </a>
           <a href="https://www.reddit.com">
-            <RedditIcon size={size} round={true} className="on ml-2 mr-2" />
+            <RedditIcon size={size} round={true} className="on" />
+            Reddit
           </a>
           <a href="https://www.gmail.com">
-            <EmailIcon size={size} round={true} className="on ml-3" />
+            <EmailIcon size={size} round={true} className="on" />
+            Gmail
           </a>
         </div>
         <div className="urls">
